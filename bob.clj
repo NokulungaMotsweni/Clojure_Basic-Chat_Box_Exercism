@@ -8,6 +8,9 @@
 
 ;; Condition for the various responses that Bob will give.        
         (cond 
+          ;; Bob's response to sure where the sentence ends in a question mark.
+          (= (last trimmed) \?) "Sure."
+          
           ;; Bob's response to silense or combinations of various whitespace characters.
           (str/blank? sentence) "Fine. Be that way!"
 
