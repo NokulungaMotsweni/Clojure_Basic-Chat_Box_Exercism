@@ -15,7 +15,7 @@
             (= trimmed (str/upper-case trimmed))) "Calm down, I know what I'm doing!"
 
           ;; Bob's response to anyone yelling at home which is all capital letters within the sentence.
-          (and (= trimmed |(str/upper-case trimmed))
+          (and (= trimmed (str/upper-case trimmed))
                 (some #(Character/isLetter %) trimmed)) "Whoa, chill out!"
 
          ;; Bob's response to sure where the sentence ends in a question mark.
